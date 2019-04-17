@@ -1,0 +1,26 @@
+/* :root {
+  --dark-text: ;
+  --light-text: ;
+  --medium-text: ;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: url(../img/hero.jpg) no-repeat center center/cover;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 50px;
+}
