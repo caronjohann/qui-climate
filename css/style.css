@@ -1,26 +1,124 @@
-/* :root {
-  --dark-text: ;
-  --light-text: ;
-  --medium-text: ;
-} */
+/* Variables */
+:root {
+  --text-dark: #000;
+  --text-light: #fff;
+  --text-medium: rgb(219, 219, 219);
+  --bg-light: #fff;
+  --bg-dark: #000;
+  --site-width: 1100px;
+}
 
+/* CSS Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Main Styles */
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 2.2rem;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+
+  margin: 0 auto;
+}
+
+a {
+  color: var(--text-dark);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header Background */
 header {
-  background: url(../img/hero.jpg) no-repeat center center/cover;
+  background: linear-gradient(
+  rgba(255, 255, 255, 0), 
+  rgba(0, 0, 0, 0.5)
+  ),
+  url(../img/hero.jpg) no-repeat center center/cover;
+
   width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
 
+/* Top Navigation */
 nav {
   position: fixed;
+  padding: 2.5rem 5rem;
+  width: 100%;
+  z-index: 1;
+}
+
+nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 50px;
+}
+
+nav ul a {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--text-light);
+  opacity: 0.5;
+  letter-spacing: 1.5px;
+}
+
+/* Header Main Content */
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-light);
+  height: 100%;
+}
+
+.header-content,
+.header-content h1 img {
+  text-align: center;
+}
+
+.header-content h1 img {
+  shape-rendering: crispEdges;
+  display: inline-block;
+  width: 8.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.header-content h2 {
+  font-size: 2.8rem;
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.header-content p {
+  font-family: 'PT Serif', serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  letter-spacing: 0.05rem;
+  opacity: 0.8;
+  max-width: 45rem;
+  margin-bottom: 7.5rem;
+}
+
+.header-content a {
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  color: var(--text-light);
 }
