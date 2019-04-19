@@ -1,10 +1,13 @@
 /* Variables */
 :root {
+  /* Text Colors */
   --text-dark: #000;
   --text-light: #fff;
   --text-medium: rgb(219, 219, 219);
+  /* Background Colors */
   --bg-light: #fff;
   --bg-dark: #000;
+  /* Website Container Width */
   --site-width: 1100px;
 }
 
@@ -50,7 +53,12 @@ ul {
   font-weight: 700;
 }
 
-/* Header Background */
+.text-center {
+  text-align: center;
+}
+
+/* Section 1: Header
+   Header Background */
 header {
   background: linear-gradient(
   rgba(255, 255, 255, 0), 
@@ -86,7 +94,7 @@ nav ul a {
   letter-spacing: 1.5px;
 }
 
-/* Header Main Content */
+/* Header Content */
 .header-content {
   display: flex;
   flex-direction: column;
@@ -132,7 +140,7 @@ nav ul a {
   color: var(--text-light);
 }
 
-/* Intro Section */
+/* Section 2: Intro Section */
 #intro {
   display: flex;
   flex-direction: column;
@@ -150,9 +158,10 @@ nav ul a {
 
 #intro .intro-content p {
   font-family: 'PT Serif', serif;
+  font-size: 2.5rem;
   line-height: 1.5;
-  letter-spacing: 0.07rem;
-  max-width: 75rem;
+  letter-spacing: 0.02rem;
+  max-width: 80rem;
   margin-bottom: 8rem;
 }
 
@@ -160,4 +169,73 @@ nav ul a {
   font-size: 1.6rem;
   font-weight: 600;
   color: var(--text-medium);
+}
+
+/* Section 3: Journey */
+#journey {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #EEEDF2;
+  overflow:hidden;
+}
+
+#journey .journey-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  /* padding-left: 32rem;
+  padding-right: 32rem; */
+}
+
+#journey .journey-content h2 {
+  font-family: 'PT Serif', serif;
+  font-size: 2.8rem;
+  font-weight: lighter;
+  letter-spacing: 0.01rem;
+  margin-bottom: 12.5rem;
+}
+
+#journey .journey-content .step {
+  padding-bottom: 10rem;
+}
+
+#journey .journey-content .step i img {
+  margin-bottom: 1.5rem;
+}
+
+
+#journey .journey-content .eye {
+  width: 7rem;
+}
+
+#journey .journey-content .tree {
+  width: 4.5rem;
+}
+
+#journey .journey-content .arrow {
+  width: 6rem;
+}
+
+#journey .journey-content .step h3 {
+  font-size: 2.1rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.5rem;
+}
+
+#journey .journey-content .step p {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  color: #737275;
+  width: 28rem;
+}
+
+#journey .journey-img {
+  width: 50vw;
+  height: 100%;
+}
+
+#journey .journey-img img {
+  height: 100%;
 }
