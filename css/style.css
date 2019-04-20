@@ -313,7 +313,7 @@ nav ul a {
 #recommended h2 {
   font-size: 2.3rem;
   line-height: 1.5;
-  padding-top: 12rem;
+  padding-top: 10rem;
   margin-bottom: 2.3rem;
   color: var(--text-light);
 }
@@ -332,7 +332,6 @@ nav ul a {
   grid-gap: 5rem;
   padding: 12rem 0;
   transform: translateX(-18%);
-
 }
 
 #recommended .slider .slide {
@@ -340,5 +339,66 @@ nav ul a {
 
 #recommended .slider .slide p {
   color: var(--text-medium);
+  margin: 0;
 }
 
+/* Brand Info */
+.brand-info {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
+.brand-info h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.brand-info .info {
+  display: flex;
+}
+
+.brand-info .info h2 {
+  margin-right: 8rem;
+}
+
+.brand-info .info p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: var(--text-medium);
+  max-width: 50rem;
+}
+
+.brand-info .brands h2 {
+  margin-bottom: 1.3rem;
+}
+
+.brand-info .brands a {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: var(--text-medium);
+  margin-right: 9rem;
+}
+
+footer {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  background-color: var(--bg-dark);
+  color: var(--text-medium);
+  font-size: 1.8rem;
+  padding: 5rem;
+}
+
+/* .credits a {
+  background-color: var(--bg-dark);
+  color: var(--text-medium);
+  font-size: 1.8rem;
+} */
+
+/* .credits img {
+  width: 8.5rem;
+  margin-bottom: 2rem;
+} */
