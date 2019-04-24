@@ -1,0 +1,88 @@
+/* Mobile Media Queries */
+.brand-info .brands a {
+  margin-right: 3rem;
+}
+
+@media (max-width: 1200px) {
+  .brand-info .brands a {
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .py-section {
+    padding: 10rem 0;
+  }
+
+  .brand-info {
+    display: block;
+    text-align: center;
+  }
+
+  .brand-info .flex-container {
+    flex-direction: column;
+  }
+
+  .brand-info .info {
+    display: block;
+  }
+
+  .brand-info .info h2 {
+    margin-right: 0;
+    margin-bottom: 1.3rem;
+  }
+
+  .brand-info .info p {
+    margin: 0 auto 10rem auto;
+    max-width: 80rem;
+  }
+
+  .brand-info .brands a {
+    margin: 0 auto;
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  #signup,
+  #journey {
+    grid-template-columns: 1fr;
+  }
+
+  #signup .image {
+    display: none;
+  }
+
+  #journey .journey-content {
+    width: 100%;
+  }
+
+  #journey .journey-content .step:last-child {
+    padding-bottom: 0;
+  }
+
+}
+
+@media (max-width: 775px) {
+  #intro .intro-content p {
+    font-size: 2.5rem;
+  }
+
+}
+
+@media (max-width: 675px) {
+  .brand-info .brands a {
+    display: block;
+    margin-bottom: 1.3rem;
+  }
+
+}
+
+@media (max-width: 520px) {
+
+  #journey .journey-img {
+    display: none;
+  }
+}

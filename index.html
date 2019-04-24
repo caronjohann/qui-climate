@@ -7,6 +7,7 @@
   <meta name="description" content="Fighting climate change together with a simple three step process.">
   <meta name="keywords" content="climate change, save the planet, global warming, fight climate change, help the planet, climate change simple, fix climate change">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="screen and (max-width: 1350px)" href="css/mobile.css">
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans|PT+Serif" rel="stylesheet">
   <title>Qui Climate | Fighting Climate Change Together</title>
 </head>
@@ -14,11 +15,13 @@
 
   <header>
     <nav>
-      <ul>
-        <li><a href="#">Qui Climate</a></li>
-        <li><a href="#">Information</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+      <div class="container">
+        <ul>
+          <li><a href="#">Qui Climate</a></li>
+          <li><a href="#">Information</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
     <div class="header-content">
@@ -30,7 +33,7 @@
   </header>
 
   <section id="intro" class="py-section">
-    <div class="intro-content">
+    <div class="intro-content container">
       <h2>Change Made Simple</h2>
 
       <p>The only <span class="bold">primary</span> care medical practice with a whole-body approach,
@@ -73,7 +76,7 @@
     </div>
   </section>
 
-  <section id="signup" class="py-section">
+  <section id="signup" class="container py-section">
     <div class="form">
       <h2>A simple way to do good.</h2>
       <p>A three part email course to help you hit the ground running.</p>
@@ -85,8 +88,8 @@
     </div>
   </section>
 
-  <section id="recommended">
-    <h2 class="text-center">We have some recommended content for you</h2>
+  <!-- <section id="recommended">
+    <h2 class="text-center">Recommended content</h2>
     <p class="text-center">Content will be updated as things happen, lets put your story here too.</p>
 
     <div class="slider">
@@ -105,18 +108,22 @@
         <p>Greenpeace, Global Warming</p>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <div class="brand-info py-section">
-    <div class="info">
-      <h2>Info</h2>
-      <p>The only primary care medical practice with a            whole-body approach, combining nutrition, lifestyle,     and cutting-edge medical testing. Find out if we’re      right for you.</p>
-    </div>
-    <div class="brands">
-      <h2>Empowering Brands</h2>
-      <a href="#">Reformation →</a>
-      <a href="#">WWF →</a>
-      <a href="#">National Geographic →</a>
+    <div class="container">
+      <div class="flex-container">
+          <div class="info">
+            <h2>Info</h2>
+            <p>The only primary care medical practice with a            whole-body approach, combining nutrition, lifestyle,     and cutting-edge medical testing. Find out if we’re      right for you.</p>
+          </div>
+          <div class="brands">
+            <h2>Empowering Brands</h2>
+            <a href="#">Reformation →</a>
+            <a href="#">WWF →</a>
+            <a href="#">National Geographic →</a>
+          </div>
+      </div>
     </div>
   </div>
 
@@ -124,7 +131,7 @@
       <!-- <img src="img/logo.svg" alt="Qui Climate"> -->
       <p>Copyright &copy; 2019 Qui Climate, All Rights Reserved</p>
       <!-- <a href="#">Back To Top</a> -->
-</footer>
+  </footer>
   
 </body>
 </html>

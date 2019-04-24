@@ -8,7 +8,7 @@
   --bg-light: #fff;
   --bg-dark: #000;
   /* Website Container Width */
-  --site-width: 1100px;
+  --site-width: 1600px;
 }
 
 /* CSS Reset */
@@ -33,6 +33,12 @@ body {
   color: var(--text-dark);
 
   margin: 0 auto;
+}
+
+.container {
+  max-width: var(--site-width);
+  margin: 0 auto;
+  padding: 0 4rem;
 }
 
 a {
@@ -245,13 +251,14 @@ nav ul a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 #signup .form {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  text-align: left;
 }
 
 #signup .form h2 {
@@ -299,12 +306,17 @@ nav ul a {
   transform: translateY(22%);
 }
 
+#signup .image {
+  text-align: right;
+  padding-right: 4rem;
+}
+
 #signup .image img {
   max-width: 60rem;
 }
 
 /* Section 5: Recommended */
-#recommended {
+/* #recommended {
   background-color: var(--bg-dark);
   overflow: hidden;
 }
@@ -340,14 +352,18 @@ nav ul a {
 #recommended .slider .slide p {
   color: var(--text-medium);
   margin: 0;
-}
+} */
 
 /* Brand Info */
 .brand-info {
-  display: flex;
-  justify-content: space-around;
   background-color: var(--bg-dark);
   color: var(--text-light);
+}
+
+.brand-info .flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 .brand-info h2 {
@@ -369,6 +385,7 @@ nav ul a {
   line-height: 1.5;
   color: var(--text-medium);
   max-width: 50rem;
+  padding-right: 4rem;
 }
 
 .brand-info .brands h2 {
@@ -379,7 +396,7 @@ nav ul a {
   font-size: 1.8rem;
   line-height: 1.5;
   color: var(--text-medium);
-  margin-right: 9rem;
+  margin-right: 8rem;
 }
 
 footer {
@@ -388,7 +405,7 @@ footer {
   align-items: center; */
   background-color: var(--bg-dark);
   color: var(--text-medium);
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding: 5rem;
 }
 
