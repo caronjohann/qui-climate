@@ -1,4 +1,4 @@
-/* Mobile Media Queries */
+/* Browser Media Queries */
 .brand-info .brands a {
   margin-right: 3rem;
 }
@@ -9,7 +9,6 @@
     margin-bottom: 1rem;
   }
 }
-
 
 @media (max-width: 1024px) {
   .py-section {
@@ -37,6 +36,7 @@
   .brand-info .info p {
     margin: 0 auto 10rem auto;
     max-width: 80rem;
+    padding-right: 0;
   }
 
   .brand-info .brands a {
@@ -65,6 +65,7 @@
 
 }
 
+/* Mobile Media Queries */
 @media (max-width: 775px) {
   #intro .intro-content p {
     font-size: 2.5rem;
@@ -84,5 +85,281 @@
 
   #journey .journey-img {
     display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 0 2rem;
+  }
+  
+  .py-section {
+    padding: 5rem 0;
+  }
+
+  #intro .intro-content h2 {
+    font-size: 1.5rem;
+  }
+
+  #intro .intro-content p {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+  }
+  
+  #journey .journey-content h2 {
+    font-size: 2.4rem;
+    margin-bottom: 6rem;
+  }
+
+  #journey .journey-content .step {
+    padding-bottom: 6rem;
+  }
+
+  #signup .form h2 {
+    font-size: 3.5rem;
+  }
+
+  .brand-info .info p {
+    margin-bottom: 6rem;
+  }
+
+  footer {
+    padding: 2rem;
+  }
+
+}
+
+@media (max-width: 375px) {
+  nav ul a {
+    font-size: 1.5rem;
+  }
+
+  .header-content h1 img {
+    width: 7rem;
+  }
+
+  .header-content h2 {
+    font-size: 2.3rem;
+  }
+
+  .header-content p {
+    font-size: 1.8rem;
+    margin-bottom: 5.5rem;
+  }
+
+  .header-content a {
+    font-size: 1.5rem;
+  }
+
+  #intro .intro-content h2 {
+    font-size: 1.4rem;
+  }
+
+  #intro .intro-content p {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+  }
+
+  #intro .intro-content a {
+    font-size: 1.5rem;
+  }
+
+  #journey .journey-content .eye {
+    width: 6rem;
+  }
+
+  #journey .journey-content .tree {
+    width: 3.5rem;
+  }
+
+  #journey .journey-content .arrow {
+    width: 5rem;
+  }
+
+  #journey .journey-content .step h3 {
+    font-size: 1.8rem;
+  }
+
+  #journey .journey-content .step p {
+    font-size: 1.6rem;
+  }
+
+  #signup .form h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  #signup .form p {
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+  }
+
+  #signup .form input,
+  #signup .form button {
+    font-size: 1.4rem;
+  }
+
+  #signup .form button img {
+    width: 1.8rem;
+  }
+
+  .brand-info h2 {
+    font-size: 1.8rem;
+  }
+
+  .brand-info .info p,
+  .brand-info .brands a {
+    font-size: 1.5rem;
+  }
+
+  .brand-info .info p {
+    margin-bottom: 4rem;
+  }
+
+  .brand-info .brands a {
+    margin-bottom: 0.8rem;
+  }
+
+  footer {
+    font-size: 1.4rem;
+  }
+}
+
+/* Mobile Landscape Media Queries */
+@media (max-height: 420px) {
+  nav ul a {
+    font-size: 1.5rem;
+  }
+
+  .header-content {
+    margin-top: 2.5rem;
+  }
+
+  .header-content h1 img {
+    width: 7rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .header-content h2 {
+    font-size: 2.2rem;
+  } 
+
+  .header-content p {
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+  }
+
+  .header-content a {
+    font-size: 1.6rem;
+  } 
+
+  #intro .intro-content p {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  #journey .journey-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10rem;
+  }
+
+  #journey .journey-content .step {
+    padding-bottom: 8rem;
+  }
+
+  .brand-info .info p {
+    margin-bottom: 6.5rem;
+  }
+
+  .brand-info.py-section {
+    padding: 8rem 0;
+  }
+
+  footer {
+    padding: 3rem;
+  }
+}
+
+@media (max-height: 375px) {
+  #journey .journey-content .eye {
+    width: 6rem;
+  }
+
+  #journey .journey-content .step h3 {
+    font-size: 1.8rem;
+  }
+
+  #journey .journey-content .tree {
+    width: 3.5rem;
+  }
+
+  #journey .journey-content .arrow {
+    width: 5rem;
+  }
+  
+  #journey .journey-img {
+    display: none;
+  }
+
+  #journey .journey-content h2 {
+    margin-bottom: 8rem;
+  }
+
+  #signup .form h2 {
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+  }
+
+  #signup .form p {
+    font-size: 1.7rem;
+    margin-bottom: 4rem;
+  }
+
+  #signup .form input,
+  #signup .form button {
+    font-size: 1.4rem;
+  }
+
+  #signup .form button img {
+    width: 1.8rem;
+  }
+
+  .brand-info .info p,
+  .brand-info .brands a {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    font-size: 1.4rem;
+    padding: 3rem;
+  }
+}
+
+@media (max-height: 375px) {
+  
+  .header-content h1 img {
+    width: 5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .header-content h2 {
+    font-size: 2rem;
+  } 
+
+  .header-content p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .header-content a {
+    font-size: 1.4rem;
+  } 
+
+  #journey .journey-content .step h3 {
+    font-size: 1.8rem;
+  }
+
+  #journey .journey-content .step p {
+    font-size: 1.6rem;
   }
 }

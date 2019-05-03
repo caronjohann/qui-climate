@@ -8,7 +8,7 @@
   --bg-light: #fff;
   --bg-dark: #000;
   /* Website Container Width */
-  --site-width: 1600px;
+  --site-width: 1500px;
 }
 
 /* CSS Reset */
@@ -63,14 +63,37 @@ ul {
   text-align: center;
 }
 
+/* Keyframes */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes nav-slide {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 /* Section 1: Header
    Header Background */
 header {
   background: linear-gradient(
   rgba(255, 255, 255, 0), 
-  rgba(0, 0, 0, 0.5)
+  rgba(0, 0, 0, 0.3)
   ),
-  url(../img/hero.jpg) no-repeat center center/cover;
+  url(../img/wind.jpg) no-repeat center center/cover;
 
   width: 100vw;
   height: 100vh;
@@ -80,9 +103,10 @@ header {
 /* Top Navigation */
 nav {
   position: fixed;
-  padding: 2.5rem 5rem;
+  padding: 2.5rem 0;
   width: 100%;
   z-index: 1;
+  animation: nav-slide 1.5s ease;
 }
 
 nav ul {
@@ -120,6 +144,7 @@ nav ul a {
   display: inline-block;
   width: 8.5rem;
   margin-bottom: 3.5rem;
+  animation: fade-up 1s ease;
 }
 
 .header-content h2 {
@@ -127,6 +152,7 @@ nav ul a {
   font-weight: normal;
   letter-spacing: 0.1rem;
   margin-bottom: 1.5rem;
+  animation: fade-up 1s ease 0.1s;
 }
 
 .header-content p {
@@ -137,6 +163,7 @@ nav ul a {
   opacity: 0.8;
   max-width: 45rem;
   margin-bottom: 7.5rem;
+  animation: fade-up 1s ease 0.2s;
 }
 
 .header-content a {
@@ -144,6 +171,7 @@ nav ul a {
   font-weight: 600;
   letter-spacing: 0.1rem;
   color: var(--text-light);
+  animation: fade-up 1s ease 0.3s;
 }
 
 /* Section 2: Intro Section */
@@ -182,7 +210,9 @@ nav ul a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background-color: #EEEDF2;
-  overflow:hidden;
+  overflow: hidden;
+  /* border-top: 3px solid #000;
+  border-bottom: 3px solid #000; */
 }
 
 #journey .journey-content {
